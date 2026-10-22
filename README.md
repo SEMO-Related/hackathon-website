@@ -1,87 +1,30 @@
-# Welcome to React Router!
+# SEMO Hackathon Website
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+A simple website hosted to provide information about the upcoming hackathons at SEMO(Southeast Missouri State University) by the department of computer science.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+This is a simple website holding the information and invitation for any upcoming hackathon at SEMO hosted by the department of computer science. Following are the list of information/features that is hosted in the website.
 
-## Getting Started
+- **Information (date, time, venue, theme etc) about the upcoming hackathons**
+- **Rules of the hackathon**
+- **Invitation form for teams**
+- **Winner Display for each hackathon**
 
-### Installation
+## Technologies used
 
-Install the dependencies:
+- React+Typescript (JS/TS framework)
+- Vite (Bundler)
+- React-Router (React variant and routing)
+- Github (Version control)
 
-```bash
-npm install
-```
+## Get started with the contributions
 
-### Development
+1. Fork the repo
+2. Create a new branch `feat/<feature-name>`
+3. Add and commit the changes
+4. Create a PR to the `main` branch
 
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+> [!Note]
+>
+> Make sure the styling and branding changes follows the brand guide of SEMO. You can find that in this [site](https://semo.edu/marketing-communications/brand/brand-guidelines)
