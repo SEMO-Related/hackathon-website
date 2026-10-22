@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import type { FormEvent } from "react";
+import SEMO_LOGO_512 from "./SEMO_LOGO_512.svg";
 import {
   ArrowDownRight,
   ArrowRight,
@@ -116,9 +117,11 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
 function Brand() {
   return (
     <a href="#top" className="flex shrink-0 items-center gap-3">
-      <span className="flex h-11 w-11 items-center justify-center bg-semo-red text-2xl font-black tracking-tighter text-white">
-        S<span className="text-semo-copper">.</span>
-      </span>
+      <img
+        src={SEMO_LOGO_512}
+        alt="SEMO Logo"
+        className="h-16 w-16"
+      />
       <span className="flex flex-col">
         <span className="text-lg font-black leading-tight tracking-tight">
           SEMO
