@@ -105,10 +105,10 @@ const faqs = [
 
 const container = "mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12";
 
-function Eyebrow({ children }: { children: React.ReactNode }) {
+function Eyebrow({ children, color }: { children: React.ReactNode, color?: string }) {
   return (
-    <div className="mb-6 flex items-center gap-3 text-[10px] font-bold tracking-[0.19em] text-semo-dark-copper sm:text-xs">
-      <span className="h-px w-8 bg-semo-red" />
+    <div className={`mb-6 flex items-center gap-3 text-[10px] font-bold tracking-[0.19em] ${color || "text-semo-dark-copper"}`}>
+      <span className={`h-px w-8 ${color === "text-white" ? "bg-semo-red" : "bg-semo-dark-copper"}`} />
       {children}
     </div>
   );
@@ -271,10 +271,7 @@ export default function App() {
             />
 
             <div className="absolute left-5 top-5 z-10 text-[9px] font-bold tracking-[0.15em] text-stone-500 sm:left-7 sm:top-7">
-              HUMAN IDEAS × MACHINE INTELLIGENCE
-            </div>
-            <div className="absolute right-5 top-5 z-10 font-mono text-xs text-semo-dark-copper sm:right-7 sm:top-7">
-              01—02
+              HUMAN IDEAS x MACHINE INTELLIGENCE
             </div>
 
             <div className="relative flex h-72 w-72 items-center justify-center sm:h-80 sm:w-80">
@@ -313,7 +310,6 @@ export default function App() {
                 <span className="h-2 w-2 rounded-full bg-semo-teal" />
                 HUMAN IDEAS. REAL IMPACT.
               </span>
-              <span>AI / 2026</span>
             </div>
           </div>
 
@@ -550,7 +546,7 @@ export default function App() {
 
           <div className={`${container} relative grid gap-12 py-20 sm:py-28 lg:grid-cols-[1fr_0.7fr] lg:items-center`}>
             <div>
-              <Eyebrow>YOUR NEXT BIG IDEA STARTS HERE</Eyebrow>
+              <Eyebrow color="text-white">YOUR NEXT BIG IDEA STARTS HERE</Eyebrow>
               <h2 className="text-5xl font-black leading-[1.03] tracking-[-0.055em] sm:text-6xl lg:text-7xl">
                 Don&apos;t just watch
                 <br />
