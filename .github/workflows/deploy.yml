@@ -42,13 +42,19 @@ jobs:
       - name: Build website
         run: pnpm build
 
+      - name: Verify static output
+        run: |
+          test -f build/client/index.html
+          echo "Homepage found in build/client/index.html"
+          ls -la build/client
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: ./build/client
 
   deploy:
     environment:
